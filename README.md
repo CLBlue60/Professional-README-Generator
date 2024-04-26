@@ -15,6 +15,8 @@ As a developer, I want a tool that generates README files for my projects automa
  The README should include a link to the user's GitHub profile.
  The README should include the user's email address for further inquiries.
 
+## Video demonstration
+https://drive.google.com/file/d/1aPQUb1yq8JXadbHyo0o0gzczrNK9ke-x/viewLinks to an external site.
 
 ### Contribute
 Contributions are welcome! Please submit a pull request with your proposed changes.
