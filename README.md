@@ -16,7 +16,7 @@ As a developer, I want a tool that generates README files for my projects automa
  The README should include the user's email address for further inquiries.
 
 ## Video demonstration
-https://drive.google.com/file/d/1aPQUb1yq8JXadbHyo0o0gzczrNK9ke-x/viewLinks to an external site.
+https://drive.google.com/file/d/1aPQUb1yq8JXadbHyo0o0gzczrNK9ke-x/viewLinks 
 
 ### Contribute
 Contributions are welcome! Please submit a pull request with your proposed changes.
@@ -26,6 +26,6 @@ To test My Awesome Project, follow these steps:
 
 Run npm test to execute the test suite.
 Questions
-For any additional questions, you can email me at: example@example.com
+For any additional questions, you can email me at: clblue@yahoo.com
 
 
