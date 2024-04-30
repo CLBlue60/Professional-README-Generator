@@ -1,10 +1,9 @@
-// Importing required modules
+// Require necessary modules
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./generateREADME.js");
 
-
-// Array of questions for user input
+// Array of questions to prompt the user
 const questions = [
   {
     type: "input",
@@ -83,37 +82,32 @@ const questions = [
   },
 ];
 
-// Function to write data to a file
+// Function to write data to file
 function writeToFile(fileName, data) {
   return new Promise((resolve, reject) => {
-     // Writing data to file
     fs.writeFile(fileName, data, (error) => {
       if (error) {
-        // Reject the promise if there's an error
         reject(error);
         return;
       }
-       // Resolve the promise if writing is successful
       resolve({ ok: true, message: "File created!" });
     });
   });
 }
 
-// Function to initialize the application
+// Function to initialize application
 function init() {
-  // Prompting user with questions
+  // Prompt the user with questions
   inquirer
     .prompt(questions)
     .then((answers) => {
-      // Logging user's answers for debugging
-      console.log(answers);
+      // Generate markdown content based on user answers
       return generateMarkdown(answers);
     })
     .then((pageMarkdown) => {
-      // Writing generated markdown content to a file
+      // Write markdown content to file
       writeToFile("example.md", pageMarkdown)
         .then(() => console.log("README.md created!"))
-        // Catching and logging any errors during the process
         .catch((error) => console.log(error));
     })
     .catch((error) => {
@@ -121,5 +115,5 @@ function init() {
     });
 }
 
-// Calling the init function to start the application
+// Call init function to start the application
 init();
