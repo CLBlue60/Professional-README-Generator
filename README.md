@@ -21,11 +21,6 @@ https://drive.google.com/file/d/1aPQUb1yq8JXadbHyo0o0gzczrNK9ke-x/viewLinks
 ### Contribute
 Contributions are welcome! Please submit a pull request with your proposed changes.
 
-### Tests
-To test My Awesome Project, follow these steps:
-
-Run npm test to execute the test suite.
-Questions
 For any additional questions, you can email me at: clblue@yahoo.com
 
 
